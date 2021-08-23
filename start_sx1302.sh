@@ -3,6 +3,7 @@
 # Load common variables
 source ./start_common.sh
 
+./deps/lgw/platform-rpi/reset_lgw.sh start $GW_RESET_PIN
 # Change to project folder
 cd examples/corecell
 
