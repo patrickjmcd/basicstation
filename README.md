@@ -45,14 +45,13 @@ The following is a three-step quick start guide on how to build and run Station.
 #### Step 1: Cloning the Station Repository
 
 ``` sourceCode
-git clone https://github.com/lorabasics/basicstation.git
+git clone https://github.com/patrickjmcd/basicstation.git
 ```
 
 #### Step 2: Compiling the Station Binary
 
 ``` sourceCode
-cd basicstation
-make platform=rpi variant=std
+./build.sh
 ```
 
 The build process consists of the following steps:
@@ -64,13 +63,9 @@ The build process consists of the following steps:
 #### Step 3: Running the Example Configuration on a Raspberry Pi
 
 ``` sourceCode
-cd examples/live-s2.sm.tc
-RADIODEV=/dev/spidev0.0 ../../build-rpi-std/bin/station
+./start.sh
 ```
 
-**Note:** The SPI device for the radio MAY be passed as an environment variable using `RADIODEV`.
-
-The example configuration connects to a public test server [s2.sm.tc](wss://s2.sm.tc) through which Station fetches all required credentials and a channel plan matching the region as determined from the IP address of the gateway. Provided there are active LoRa devices in proximity, received LoRa frames are printed in the log output on `stderr`.
 
 ## Instruction for Supported Platfroms
 
