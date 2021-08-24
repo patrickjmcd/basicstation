@@ -1,0 +1,8 @@
+[Unit]
+Description=basicstation
+
+[Service]
+ExecStart=/opt/basicstation/start_static.sh
+
+[Install]
+WantedBy=multi-user.target
