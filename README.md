@@ -38,6 +38,12 @@ Building the Station binary from source, requires
 * git
 * bash
 
+## Installing (super easy way)
+
+```Shell
+curl -L https://raw.githubusercontent.com/patrickjmcd/basicstation/master/install.sh | /bin/bash
+```
+
 ## First Steps
 
 The following is a three-step quick start guide on how to build and run Station. It uses a Raspberry Pi as host platform and assumes a Concentrator Reference Design 1.5 compatible radio board connected via SPI. In this example the build process is done on the target platform itself (the make environment also supports cross compilation in which case the toolchain is expected in `~/toolchain-$platform` - see [setup.gmk](setup.gmk)).
